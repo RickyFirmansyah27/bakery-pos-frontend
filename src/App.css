@@ -1,0 +1,54 @@
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Mobile viewport height fix */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Mobile safe area adjustments */
+@supports (padding: max(0px)) {
+  .mobile-safe-bottom {
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+  
+  .mobile-safe-top {
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+  }
+}
+
+/* Fix iOS height issues */
+html, body, #root {
+  height: 100%;
+}
